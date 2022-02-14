@@ -1,5 +1,7 @@
 package com.estherNmorga.demo.service.Impl;
 
-public class MemberServiceImpl {
+import com.estherNmorga.demo.service.MemberService;
+
+public class MemberServiceImpl implements MemberService{
 
 }
