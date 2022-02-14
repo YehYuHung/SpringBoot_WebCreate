@@ -14,7 +14,7 @@
 	<main>
 		<h1>加入會員</h1>
 		<form id="registerForm" method="POST" th:action="@{/register}"
-			th:Object="${memberAccountVO}" enctype="multipart/form-data"
+			th:Object="${memberModel}" enctype="multipart/form-data"
 			autocomplete="off">
 			<section class="form-input">
 				<label>姓名</label>
@@ -26,12 +26,12 @@
 				</div>
 			</section>
 			<section class="form-input">
-				<label>帳號/Email</label>
+				<label>電話</label>
 				<div class="input-area">
 					<div class="input-img">
 						<img th:src="@{/images/person.png}">
 					</div>
-					<input type="text" th:field="*{username}" placeholder="請輸入您的Email" />
+					<input type="text" th:field="*{phone}" placeholder="請輸入您的電話" />
 				</div>
 			</section>
 			<section class="form-input">
@@ -44,6 +44,7 @@
 						placeholder="請輸入您的密碼" />
 				</div>
 			</section>
+			<!--
 			<section class="form-input">
 				<label>再次輸入密碼</label>
 				<div class="input-area">
@@ -54,6 +55,7 @@
 						placeholder="請再次輸入您的密碼" />
 				</div>
 			</section>
+			-->
 			<button>註冊</button>
 			<span>已經是會員了嗎?<a th:href="@{/login}">立即登入</a></span>
 		</form>
