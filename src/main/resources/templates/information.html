@@ -2,9 +2,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>會員資訊</title>
+	<title th:text="#{index.web}">會員資訊</title>
 	<!-- 
 	<head th:insert="load/css :: css"></head>
 	<head th:insert="load/js :: js"></head>
@@ -14,6 +15,10 @@
 </head>
 <body>
 	<main>
-		<h1>登陸成功，恭喜阿</h1>
+		<h1 th:text="#{index.title}"></h1>
+		<h3 th:text="#{index.welcome}"></h3>
+		<div><a th:href="@{information?lang=zh_TW}">zh_TW</a></div>
+		<div><a th:href="@{information?lang=en_US}">en_US</a></div>
+		<div><a th:href="@{information?lang=ja_JP}">ja_JP</a></div>
 	</main>
 </body>
