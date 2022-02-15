@@ -16,4 +16,5 @@ public class MemberModel {
 	private String phone;
 	private String address;
 	private String createDate;
+	private String crypto;
 }

@@ -7,10 +7,10 @@ $(() => {
 	// Description: 驗證表單輸入欄位填寫及格式
 	function verifyFormInput() {
         // 檢查帳號
-		var verifyUsername = isValidUsername($("#username").val());
+		var verifyUsername = isValidUsername($("#name").val());
 		if(!verifyUsername.valid) {
             alert(verifyUsername.message);
-            $("#username").focus();
+            $("#name").focus();
             return false;
 		}
 

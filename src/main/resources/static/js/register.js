@@ -17,10 +17,10 @@ $(() => {
         }
 
         // 驗證帳號
-		var verifyUsername = isValidUsername($("#username").val());
+		var verifyUsername = isValidUsername($("#name").val());
 		if(!verifyUsername.valid) {
             alert(verifyUsername.message);
-            $("#username").focus();
+            $("#name").focus();
             return false;
 		}
 
@@ -34,13 +34,15 @@ $(() => {
         }
 
         // 驗證再次輸入密碼
+        /*
 		var verifyCheckPassword = isValidCheckPassword(password, $("#checkPassword").val());
 		if(!verifyCheckPassword.valid) {
             alert(verifyCheckPassword.message);
             $("#checkPassword").focus();
             return false;
 		}
-		return true;		
+		*/		
+		return true;
 	}
 	
 	// Description: 驗證帳號是否已被使用

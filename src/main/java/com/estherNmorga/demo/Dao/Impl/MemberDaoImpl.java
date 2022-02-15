@@ -29,11 +29,11 @@ public class MemberDaoImpl implements MemberDao {
 	public Integer insert(MemberModel memberModel) {
 		String sql = "INSERT INTO morga.esthermembership ("
 				+ "		name, password, "
-				+ "		phone, address, createDate"
+				+ "		phone, address, createDate, crypto"
 				+ ")"
 				+ "VALUE("
 				+ "		:name, :password,"
-				+ "		:phone, :address ,NOW()"
+				+ "		:phone, :address, NOW(), :crypto"
 				+ ")";
 		
 		SqlParameterSource paramSource = new BeanPropertySqlParameterSource(memberModel);
@@ -49,7 +49,7 @@ public class MemberDaoImpl implements MemberDao {
 	public MemberModel findMemberByUserName(String username) {
 		// TODO Auto-generated method stub
 		String sql = " SELECT"
-				+ "		id, name, password, phone, address, createDate"
+				+ "		id, name, password, phone, address, createDate, crypto"
 				+ " FROM"
 				+ "		morga.esthermembership"
 				+ " WHERE"
