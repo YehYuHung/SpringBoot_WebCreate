@@ -48,13 +48,17 @@ public class MemberServiceImpl implements MemberService{
 	public Optional<String> register(MemberModel memberModel) {
 		// TODO Auto-generated method stub
 		// 驗證欄位是否填寫正確格式
+		if(!myLibrary.checkPhone(memberModel.getPhone())) 
+		{
+			return Optional.of("\u8acb\u586b\u516510\u78bc\u4e26\u4e14\u662f\u884c\u52d5\u96fb\u8a71\u898f\u683c");
+		}
 		if(!myLibrary.checkAddress(memberModel.getAddress())) 
 		{
 			return Optional.of("\u5730\u5740\u4e0d\u5305\u542b\u82f1\u6587\u5b57\u6bcd/\u5176\u4ed6\u7b26\u865f");
 		}
-		if(!myLibrary.checkPhone(memberModel.getPhone())) 
+		if(memberModel.getName().isEmpty() || memberModel.getPassword().isEmpty())
 		{
-			return Optional.of("\u8acb\u586b\u516510\u78bc\u4e26\u4e14\u662f\u884c\u52d5\u96fb\u8a71\u898f\u683c");
+			return Optional.of("\u8acb\u8f38\u5165\u5e33\u865f\u53ca\u5bc6\u78bc");
 		}
 		
 		// 檢查帳號是否重複註冊
@@ -78,7 +82,7 @@ public class MemberServiceImpl implements MemberService{
 		Integer id = memberDao.insert(newMember);
 		if(id == 0 || id == null)
 		{
-			return Optional.of("新增會員帳號時發生錯誤");
+			return Optional.of("\u65b0\u589e\u6703\u54e1\u5e33\u865f\u6642\u767c\u751f\u932f\u8aa4");
 		}
 		
 		return Optional.empty();

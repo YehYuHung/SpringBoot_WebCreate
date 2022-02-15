@@ -1,3 +1,4 @@
+/*
 $(() => {
     $("#registerForm").on("submit", function() {
 	    // 驗證表單輸入欄位填寫及格式
@@ -24,8 +25,8 @@ $(() => {
             $("#name").focus();
             return false;
 		}
-		*/
-		
+
+				
 		// 驗證電話
         if($("#phone").val() == "") {
             alert("請輸入電話");
@@ -59,7 +60,7 @@ $(() => {
             $("#checkPassword").focus();
             return false;
 		}
-		*/		
+		
 		return true;
 	}
 	
@@ -87,5 +88,6 @@ $(() => {
         });
         return result;
 	}
-	*/
+
 })
+*/

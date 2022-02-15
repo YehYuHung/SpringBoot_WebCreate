@@ -37,6 +37,7 @@
 						placeholder="請輸入您的密碼" />
 				</div>
 			</section>
+			<span class="error-message" th:text="${MESSAGE}"></span>
 			<button>登入</button>
 			<span>還不是會員嗎?<a th:href="@{/register}">立即加入</a></span>
 		</form>

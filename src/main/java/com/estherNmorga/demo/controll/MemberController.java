@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -33,8 +34,10 @@ public class MemberController {
 	
 	@GetMapping(value = {"/", "/login"})
 	public String login(
+			Model model,
 			@ModelAttribute MemberModel memberModel,
 			@ModelAttribute(value = "MESSAGE") String message) {
+		model.addAttribute("MESSAGE", message);
 		return "login";
 	}
 	
@@ -57,7 +60,11 @@ public class MemberController {
 	}
 
 	@GetMapping(value = "/register")
-	public String register(@ModelAttribute MemberModel memberModel) {
+	public String register(
+			Model model,
+			@ModelAttribute MemberModel memberModel,
+			@ModelAttribute(value = "MESSAGE") String message) {
+		model.addAttribute("MESSAGE", message);
 		return "register";
 	}
 	
@@ -67,6 +74,11 @@ public class MemberController {
 			RedirectAttributes redirectAttributes){
 		//TODO: process POST request
 		Optional<String> optional = memberService.register(memberModel);
+		if(optional.isPresent())
+		{
+			redirectAttributes.addFlashAttribute("MESSAGE", optional.get());
+			return "redirect:register";
+		}
 		String message = optional.orElse("\u8a3b\u518a\u6210\u529f");
 		redirectAttributes.addFlashAttribute("MESSAGE", message);
 		return "redirect:login";
@@ -75,7 +87,7 @@ public class MemberController {
 	
 	@GetMapping(value = "/information")
 	public String information(
-			@ModelAttribute(value = "MESSAGE") String Message) {
+			@ModelAttribute(value = "MESSAGE") String message) {
 		return "information";
 	}
 	
