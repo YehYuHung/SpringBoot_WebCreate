@@ -17,12 +17,22 @@ $(() => {
         }
 
         // 驗證帳號
+        /*
 		var verifyUsername = isValidUsername($("#name").val());
 		if(!verifyUsername.valid) {
             alert(verifyUsername.message);
             $("#name").focus();
             return false;
 		}
+		*/
+		
+		// 驗證電話
+        if($("#phone").val() == "") {
+            alert("請輸入電話");
+            $("#phone").focus();
+            return false;
+        }
+
 
         // 驗證密碼
         var password = $("#password").val();
@@ -32,6 +42,14 @@ $(() => {
             $("#password").focus();
             return false;
         }
+
+		// 驗證地址
+        if($("#address").val() == "") {
+            alert("請輸入姓名");
+            $("#address").focus();
+            return false;
+        }
+	
 
         // 驗證再次輸入密碼
         /*
@@ -46,6 +64,7 @@ $(() => {
 	}
 	
 	// Description: 驗證帳號是否已被使用
+	/*
 	function verifyUsernameDuplicate() {
 		var result = false
 		$.ajax({
@@ -68,4 +87,5 @@ $(() => {
         });
         return result;
 	}
+	*/
 })

@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.DigestUtils;
 
 import com.estherNmorga.demo.Dao.MemberDao;
+import com.estherNmorga.demo.Library.MyLibrary;
 import com.estherNmorga.demo.model.MemberModel;
 
 @SpringBootTest
@@ -19,18 +20,21 @@ class DemoApplicationTests {
 	@Autowired
 	private MemberDao memberDao;
 
-	private String getMd5Password(String password, String crypto) {
-		// 對password + salt 進行三次加密
-		String str = password + crypto;
-		for (int i = 0; i < 3; i++) {
-			str = DigestUtils.md5DigestAsHex(str.getBytes()).toUpperCase();
-		}
-		return str;
-	}
+	@Autowired
+	private MyLibrary myLibrary;
 	
-	private String getCryptoUUID() {
-		return UUID.randomUUID().toString().replaceAll("-", "").toUpperCase();
-	}
+//	private String getMd5Password(String password, String crypto) {
+//		// 對password + salt 進行三次加密
+//		String str = password + crypto;
+//		for (int i = 0; i < 3; i++) {
+//			str = DigestUtils.md5DigestAsHex(str.getBytes()).toUpperCase();
+//		}
+//		return str;
+//	}
+//	
+//	private String getCryptoUUID() {
+//		return UUID.randomUUID().toString().replaceAll("-", "").toUpperCase();
+//	}
 	
 	/**
 	 * 寫入資料測試 Dao.insert()
@@ -41,9 +45,9 @@ class DemoApplicationTests {
 	 */
 	public void insert() {
 		MemberModel memberModel = new MemberModel();
-		memberModel.setCrypto(this.getCryptoUUID());
+		memberModel.setCrypto(myLibrary.getCryptoUUID());
 		memberModel.setName("morga.Yeh");
-		memberModel.setPassword(this.getMd5Password("onlylove317920",memberModel.getCrypto()));
+		memberModel.setPassword(myLibrary.getMd5Password("onlylove317920",memberModel.getCrypto()));
 		memberModel.setPhone("0987930607");
 		memberModel.setAddress("新北市永和區");
 		Integer id = memberDao.insert(memberModel);

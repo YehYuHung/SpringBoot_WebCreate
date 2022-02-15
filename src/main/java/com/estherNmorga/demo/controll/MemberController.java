@@ -1,13 +1,12 @@
 package com.estherNmorga.demo.controll;
 
-import java.util.Locale;
+import java.util.Optional;
 
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -63,18 +62,20 @@ public class MemberController {
 	}
 	
 	@PostMapping(value = "/register")
-	public String doLogin(@ModelAttribute MemberModel memberModel){
+	public String doRegister(
+			@ModelAttribute MemberModel memberModel,
+			RedirectAttributes redirectAttributes){
 		//TODO: process POST request
-		
-		return "";
+		Optional<String> optional = memberService.register(memberModel);
+		String message = optional.orElse("\u8a3b\u518a\u6210\u529f");
+		redirectAttributes.addFlashAttribute("MESSAGE", message);
+		return "redirect:login";
 	}
 
 	
 	@GetMapping(value = "/information")
 	public String information(
-			Model model,
 			@ModelAttribute(value = "MESSAGE") String Message) {
-		model.addAttribute("welcome",messageSource.getMessage("index.welcome", null, Locale.TAIWAN));
 		return "information";
 	}
 	
