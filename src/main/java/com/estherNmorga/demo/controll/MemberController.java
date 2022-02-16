@@ -5,6 +5,8 @@ import java.util.Optional;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
@@ -28,6 +30,8 @@ public class MemberController {
 	@Autowired
 	private MemberService memberService;
 
+	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
+	
 	@GetMapping(value = "/welcome")
 	public String welcomeTest() {
 		return "Welcome";
@@ -50,6 +54,7 @@ public class MemberController {
 		//TODO: process POST request
 		
 		MemberModel loginUser = memberService.login(memberModel);
+		logger.info(memberModel.getName() + " 登陸成功");
 		session.setAttribute("member", loginUser);
 		return "redirect:information";
 	}
@@ -69,6 +74,7 @@ public class MemberController {
 			RedirectAttributes redirectAttributes){
 		//TODO: process POST request
 		memberService.register(memberModel);
+		logger.info(memberModel.getId() + " " + memberModel.getName() + " 註冊成功");
 		redirectAttributes.addFlashAttribute("MESSAGE", "\u8a3b\u518a\u6210\u529f");
 		return "register";
 	}
