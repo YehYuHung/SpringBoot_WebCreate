@@ -48,14 +48,8 @@ public class MemberController {
 			HttpSession session, 
 			RedirectAttributes redirectAttributes) {
 		//TODO: process POST request
-		MemberModel loginUser = memberService.login(memberModel);
-		if( loginUser == null )
-		{
-			String message = "帳號或密碼錯誤";
-			redirectAttributes.addFlashAttribute("MESSAGE", message);
-			return "redirect:login";
-		}
 		
+		MemberModel loginUser = memberService.login(memberModel);
 		session.setAttribute("member", loginUser);
 		return "redirect:information";
 	}
@@ -74,15 +68,9 @@ public class MemberController {
 			@Valid @ModelAttribute MemberModel memberModel,
 			RedirectAttributes redirectAttributes){
 		//TODO: process POST request
-		Optional<String> optional = memberService.register(memberModel);
-		if(optional.isPresent())
-		{
-			redirectAttributes.addFlashAttribute("MESSAGE", optional.get());
-			return "redirect:register";
-		}
-		String message = optional.orElse("\u8a3b\u518a\u6210\u529f");
-		redirectAttributes.addFlashAttribute("MESSAGE", message);
-		return "redirect:login";
+		memberService.register(memberModel);
+		redirectAttributes.addFlashAttribute("MESSAGE", "\u8a3b\u518a\u6210\u529f");
+		return "register";
 	}
 
 	

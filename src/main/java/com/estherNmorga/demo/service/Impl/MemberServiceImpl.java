@@ -10,6 +10,9 @@ import org.springframework.util.DigestUtils;
 import com.estherNmorga.demo.Dao.MemberDao;
 import com.estherNmorga.demo.model.MemberModel;
 import com.estherNmorga.demo.service.MemberService;
+import com.estherNmorga.demo.service.exception.InsertException;
+import com.estherNmorga.demo.service.exception.MemberNotFoundException;
+import com.estherNmorga.demo.service.exception.PasswordNotCorrectException;
 import com.estherNmorga.demo.Library.MyLibrary;
 
 @Service
@@ -29,7 +32,7 @@ public class MemberServiceImpl implements MemberService{
 		MemberModel data = memberDao.findMemberByUserName(memberModel.getName());
 		if(data == null)
 		{
-			return null;
+			throw new MemberNotFoundException("帳號或密碼錯誤");
 		}
 		
 		// 登陸者密碼加密
@@ -38,34 +41,34 @@ public class MemberServiceImpl implements MemberService{
 		// 比對密碼加密後正確與否
 		if( !cryptoPassword.equals(data.getPassword()))
 		{
-			return null;
+			throw new PasswordNotCorrectException("帳號或密碼錯誤");
 		}
-		
+
 		return data;
 	}
 
 	@Override
-	public Optional<String> register(MemberModel memberModel) {
+	public void register(MemberModel memberModel) {
 		// TODO Auto-generated method stub
 		// 驗證欄位是否填寫正確格式
 		if(!myLibrary.checkPhone(memberModel.getPhone())) 
 		{
-			return Optional.of("\u8acb\u586b\u516510\u78bc\u4e26\u4e14\u662f\u884c\u52d5\u96fb\u8a71\u898f\u683c");
+			throw new MemberNotFoundException("請填入10碼並且是行動電話規格");
 		}
 		if(!myLibrary.checkAddress(memberModel.getAddress())) 
 		{
-			return Optional.of("\u5730\u5740\u4e0d\u5305\u542b\u82f1\u6587\u5b57\u6bcd/\u5176\u4ed6\u7b26\u865f");
+			throw new MemberNotFoundException("地址不包含英文字母/其他符號");
 		}
 		if(memberModel.getName().isEmpty() || memberModel.getPassword().isEmpty())
 		{
-			return Optional.of("\u8acb\u8f38\u5165\u5e33\u865f\u53ca\u5bc6\u78bc");
+			throw new MemberNotFoundException("請輸入帳號及密碼");
 		}
 		
 		// 檢查帳號是否重複註冊
 		MemberModel data = memberDao.findMemberByUserName(memberModel.getName());
 		if(data != null)
 		{
-			return Optional.of("\u8a72\u5e33\u865f\u5df2\u88ab\u4f7f\u7528");
+			throw new MemberNotFoundException("該帳號已被使用");
 		}
 		
 		// 密碼進行加密動作
@@ -82,10 +85,8 @@ public class MemberServiceImpl implements MemberService{
 		Integer id = memberDao.insert(newMember);
 		if(id == 0 || id == null)
 		{
-			return Optional.of("\u65b0\u589e\u6703\u54e1\u5e33\u865f\u6642\u767c\u751f\u932f\u8aa4");
+			throw new InsertException("新增會員帳號時發生錯誤");
 		}
-		
-		return Optional.empty();
 	}
 
 	@Override
