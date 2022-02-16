@@ -3,6 +3,7 @@ package com.estherNmorga.demo.controll;
 import java.util.Optional;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
@@ -43,7 +44,7 @@ public class MemberController {
 	
 	@PostMapping(value = "/login")
 	public String doLogin(
-			@ModelAttribute MemberModel memberModel,
+			@Valid @ModelAttribute MemberModel memberModel,
 			HttpSession session, 
 			RedirectAttributes redirectAttributes) {
 		//TODO: process POST request
@@ -70,7 +71,7 @@ public class MemberController {
 	
 	@PostMapping(value = "/register")
 	public String doRegister(
-			@ModelAttribute MemberModel memberModel,
+			@Valid @ModelAttribute MemberModel memberModel,
 			RedirectAttributes redirectAttributes){
 		//TODO: process POST request
 		Optional<String> optional = memberService.register(memberModel);

@@ -27,6 +27,11 @@ public class MyLibrary {
 		{
 			return false;
 		}
+		// 電話長度 10 - 13
+		if(phone.length()<10 || phone.length()>13)
+		{
+			return false;
+		}
 		
 		// 檢查號碼不含英文字母或其他符號
 		for (int i = 0; i < phone.length(); i++) {
