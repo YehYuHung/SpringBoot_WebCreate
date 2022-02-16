@@ -1,19 +1,65 @@
-2022-02-16 16:48:13 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 30148 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
-2022-02-16 16:48:13 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
-2022-02-16 16:48:14 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
-2022-02-16 16:48:14 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
-2022-02-16 16:48:14 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-02-16 16:48:14 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
-2022-02-16 16:48:14 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1062 ms
-2022-02-16 16:48:15 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
-2022-02-16 16:48:15 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.328 seconds (JVM running for 3.035)
-2022-02-16 16:48:37 === [https-jsse-nio-8095-exec-4] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-02-16 16:48:37 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
-2022-02-16 16:48:37 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
-2022-02-16 16:48:37 === [https-jsse-nio-8095-exec-4] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
-2022-02-16 16:48:37 === [https-jsse-nio-8095-exec-4] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
-2022-02-16 16:48:37 === [https-jsse-nio-8095-exec-4] === WARN  === com.estherNmorga.demo.controll.MemberController ==== 帳號或密碼錯誤
-2022-02-16 16:48:38 === [https-jsse-nio-8095-exec-5] === WARN  === com.estherNmorga.demo.controll.MemberController ==== 請填入10碼並且是行動電話規格
-2022-02-16 16:48:52 === [RMI TCP Connection(10)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
-2022-02-16 16:48:52 === [RMI TCP Connection(10)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown initiated...
-2022-02-16 16:48:52 === [RMI TCP Connection(10)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown completed.
+2022-02-17 00:00:56 === [RMI TCP Connection(11)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 00:00:58 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 24864 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 00:00:58 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 00:00:59 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 00:00:59 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 00:00:59 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 00:00:59 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 00:00:59 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1283 ms
+2022-02-17 00:01:00 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 00:01:00 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.757 seconds (JVM running for 3.552)
+2022-02-17 00:01:06 === [https-jsse-nio-8095-exec-4] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 00:01:06 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 00:01:06 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 00:41:13 === [RMI TCP Connection(48)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 00:45:25 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 26208 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 00:45:25 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 00:45:26 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 00:45:26 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 00:45:26 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 00:45:27 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 00:45:27 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1324 ms
+2022-02-17 00:45:27 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 00:45:27 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.848 seconds (JVM running for 3.638)
+2022-02-17 00:45:34 === [https-jsse-nio-8095-exec-4] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 00:45:34 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 00:45:34 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 00:46:21 === [RMI TCP Connection(10)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 00:46:23 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 30216 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 00:46:23 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 00:46:25 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 00:46:25 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 00:46:25 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 00:46:25 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 00:46:25 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1223 ms
+2022-02-17 00:46:26 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 00:46:26 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.67 seconds (JVM running for 3.458)
+2022-02-17 00:46:27 === [https-jsse-nio-8095-exec-4] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 00:46:27 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 00:46:27 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 00:49:21 === [RMI TCP Connection(11)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 00:49:24 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 6780 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 00:49:24 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 00:49:25 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 00:49:25 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 00:49:25 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 00:49:25 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 00:49:25 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1243 ms
+2022-02-17 00:49:26 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 00:49:26 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.718 seconds (JVM running for 3.613)
+2022-02-17 00:49:33 === [https-jsse-nio-8095-exec-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 00:49:33 === [https-jsse-nio-8095-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 00:49:33 === [https-jsse-nio-8095-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 00:51:20 === [RMI TCP Connection(11)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 00:51:27 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 18004 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 00:51:27 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 00:51:29 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 00:51:29 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 00:51:29 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 00:51:29 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 00:51:29 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1328 ms
+2022-02-17 00:51:30 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 00:51:30 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.78 seconds (JVM running for 3.577)
+2022-02-17 00:51:33 === [https-jsse-nio-8095-exec-3] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 00:51:33 === [https-jsse-nio-8095-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 00:51:33 === [https-jsse-nio-8095-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
