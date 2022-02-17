@@ -63,3 +63,78 @@
 2022-02-17 00:51:33 === [https-jsse-nio-8095-exec-3] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-02-17 00:51:33 === [https-jsse-nio-8095-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
 2022-02-17 00:51:33 === [https-jsse-nio-8095-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 07:52:55 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 25564 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 07:52:55 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 07:52:56 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 07:52:56 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 07:52:56 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 07:52:56 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 07:52:56 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1256 ms
+2022-02-17 07:52:57 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 07:52:57 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.86 seconds (JVM running for 3.816)
+2022-02-17 07:53:06 === [https-jsse-nio-8095-exec-4] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 07:53:06 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 07:53:06 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 07:53:17 === [https-jsse-nio-8095-exec-9] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2022-02-17 07:53:17 === [https-jsse-nio-8095-exec-9] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2022-02-17 07:53:17 === [https-jsse-nio-8095-exec-9] === INFO  === com.estherNmorga.demo.controll.MemberController ==== morga.Yeh 登陸成功
+2022-02-17 07:55:29 === [RMI TCP Connection(13)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 07:55:29 === [RMI TCP Connection(13)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown initiated...
+2022-02-17 07:55:29 === [RMI TCP Connection(13)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown completed.
+2022-02-17 07:55:32 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 18192 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 07:55:32 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 07:55:33 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 07:55:33 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 07:55:33 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 07:55:33 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 07:55:33 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1344 ms
+2022-02-17 07:55:34 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 07:55:34 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.779 seconds (JVM running for 3.544)
+2022-02-17 07:55:40 === [https-jsse-nio-8095-exec-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 07:55:40 === [https-jsse-nio-8095-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 07:55:40 === [https-jsse-nio-8095-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 07:55:40 === [https-jsse-nio-8095-exec-1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2022-02-17 07:55:40 === [https-jsse-nio-8095-exec-1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2022-02-17 07:55:40 === [https-jsse-nio-8095-exec-1] === INFO  === com.estherNmorga.demo.controll.MemberController ==== morga.Yeh 登陸成功
+2022-02-17 07:55:40 === [https-jsse-nio-8095-exec-3] === WARN  === com.estherNmorga.demo.controll.MemberController ==== Failed to convert value of type 'com.estherNmorga.demo.model.MemberModel' to required type 'java.lang.reflect.Member'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'com.estherNmorga.demo.model.MemberModel' to required type 'java.lang.reflect.Member': no matching editors or conversion strategy found
+2022-02-17 07:56:03 === [https-jsse-nio-8095-exec-3] === INFO  === com.estherNmorga.demo.controll.MemberController ==== morga.Yeh 登陸成功
+2022-02-17 07:56:03 === [https-jsse-nio-8095-exec-6] === WARN  === com.estherNmorga.demo.controll.MemberController ==== Failed to convert value of type 'com.estherNmorga.demo.model.MemberModel' to required type 'java.lang.reflect.Member'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'com.estherNmorga.demo.model.MemberModel' to required type 'java.lang.reflect.Member': no matching editors or conversion strategy found
+2022-02-17 07:56:19 === [RMI TCP Connection(9)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 07:56:19 === [RMI TCP Connection(9)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown initiated...
+2022-02-17 07:56:20 === [RMI TCP Connection(9)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown completed.
+2022-02-17 07:56:22 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 27592 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 07:56:22 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 07:56:23 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 07:56:23 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 07:56:23 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 07:56:23 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 07:56:23 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1248 ms
+2022-02-17 07:56:24 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 07:56:24 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.77 seconds (JVM running for 3.557)
+2022-02-17 07:56:25 === [https-jsse-nio-8095-exec-4] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 07:56:25 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 07:56:25 === [https-jsse-nio-8095-exec-4] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 07:56:34 === [https-jsse-nio-8095-exec-9] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2022-02-17 07:56:34 === [https-jsse-nio-8095-exec-9] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2022-02-17 07:56:34 === [https-jsse-nio-8095-exec-9] === INFO  === com.estherNmorga.demo.controll.MemberController ==== morga.Yeh 登陸成功
+2022-02-17 07:56:34 === [https-jsse-nio-8095-exec-10] === INFO  === com.estherNmorga.demo.controll.MemberController ==== MemberModel(id=1, name=morga.Yeh, password=056270B08A2D96031D91778BEFE4B69E, phone=0987930607, address=新北市永和區, createDate=2022-02-15 10:08:26, crypto=FF67F77255E54290872BDB1E043AA060)
+2022-02-17 08:03:18 === [RMI TCP Connection(16)-127.0.0.1] === INFO  === o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin ==== Application shutdown requested.
+2022-02-17 08:03:18 === [RMI TCP Connection(16)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown initiated...
+2022-02-17 08:03:18 === [RMI TCP Connection(16)-127.0.0.1] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown completed.
+2022-02-17 08:03:20 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Starting DemoApplication using Java 17.0.1 on LAPTOP-2HB5VIH5 with PID 3120 (C:\eclipse\eclipse-workspace\webCreateTest\target\classes started by USER in C:\eclipse\eclipse-workspace\webCreateTest)
+2022-02-17 08:03:20 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== No active profile set, falling back to default profiles: default
+2022-02-17 08:03:22 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8095 (https)
+2022-02-17 08:03:22 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2022-02-17 08:03:22 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-17 08:03:22 === [main] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring embedded WebApplicationContext
+2022-02-17 08:03:22 === [main] === INFO  === o.s.b.w.s.c.ServletWebServerApplicationContext ==== Root WebApplicationContext: initialization completed in 1240 ms
+2022-02-17 08:03:23 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8095 (https) with context path ''
+2022-02-17 08:03:23 === [main] === INFO  === com.estherNmorga.demo.DemoApplication ==== Started DemoApplication in 2.721 seconds (JVM running for 3.523)
+2022-02-17 08:03:43 === [https-jsse-nio-8095-exec-10] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] ==== Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 08:03:43 === [https-jsse-nio-8095-exec-10] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Initializing Servlet 'dispatcherServlet'
+2022-02-17 08:03:43 === [https-jsse-nio-8095-exec-10] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== Completed initialization in 1 ms
+2022-02-17 08:04:02 === [https-jsse-nio-8095-exec-4] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2022-02-17 08:04:02 === [https-jsse-nio-8095-exec-4] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2022-02-17 08:04:02 === [https-jsse-nio-8095-exec-4] === INFO  === com.estherNmorga.demo.controll.MemberController ==== morga.Yeh 登陸成功
+2022-02-17 08:04:02 === [https-jsse-nio-8095-exec-8] === INFO  === com.estherNmorga.demo.controll.MemberController ==== MemberModel(id=1, name=morga.Yeh, password=056270B08A2D96031D91778BEFE4B69E, phone=0987930607, address=新北市永和區, createDate=2022-02-15 10:08:26, crypto=FF67F77255E54290872BDB1E043AA060)
+2022-02-17 08:04:09 === [https-jsse-nio-8095-exec-7] === INFO  === com.estherNmorga.demo.controll.MemberController ==== session 'member' clean
