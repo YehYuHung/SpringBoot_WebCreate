@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class RestModel {
+public class RestModel extends Base{
 	private int id;
 	private String firstName;
 	private String lastName;
