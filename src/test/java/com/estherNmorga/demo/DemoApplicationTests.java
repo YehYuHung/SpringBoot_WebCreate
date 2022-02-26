@@ -9,10 +9,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.DigestUtils;
+import org.springframework.web.client.RestTemplate;
 
 import com.estherNmorga.demo.Dao.MemberDao;
 import com.estherNmorga.demo.Library.MyLibrary;
 import com.estherNmorga.demo.model.MemberModel;
+import com.estherNmorga.demo.model.WebDemoModel;
 
 @SpringBootTest
 class DemoApplicationTests {
@@ -75,5 +77,16 @@ class DemoApplicationTests {
 		memberModel.setPassword("Qwerty12345");
 		Integer result = memberDao.update(memberModel);
 		System.out.println("success! result : " + result);
+	}
+	
+	/**
+	 * RestTemplate class 使用測試(class的部分需要 empty Constructor解析，否則需要用Annotation方式)
+	 * 註解部分使用 @JsonProperty("field_name")
+	 * @apiNote getForObject (url, class 需更換至相關url的class)
+	 */
+	public void restTemplateApplication() {
+		RestTemplate restTemplate = new RestTemplate();
+		WebDemoModel webDemo = restTemplate.getForObject("http://localhost:8090/greeting", WebDemoModel.class);
+		System.out.println(webDemo.toString());
 	}
 }
