@@ -34,7 +34,7 @@ public class WeatherModel {
 
 	@Override
 	public String toString() {
-		return "WeatherModel {success=" + success + ", result=" + result + ", records=" + records + "}";
+		return "{\"success\":\"" + success + "\", \"result\":\"" + result + "\", \"records\":\"" + records + "\"}";
 	}
 
 	public WeatherModel(String success, ResultModel result, RecordsModel records) {

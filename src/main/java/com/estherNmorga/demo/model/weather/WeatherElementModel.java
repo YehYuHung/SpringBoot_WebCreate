@@ -27,7 +27,7 @@ public class WeatherElementModel {
 
 	@Override
 	public String toString() {
-		return "WeatherElementModel {elementName=" + elementName + ", time=" + time + "}";
+		return "{\"elementName\":\"" + elementName + "\", \"time\":\"" + time + "\"}";
 	}
 
 	public WeatherElementModel(String elementName, ArrayList<TimeModel> time) {

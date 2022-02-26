@@ -25,7 +25,7 @@ public class FieldModel {
 
 	@Override
 	public String toString() {
-		return "FieldModel {id=" + id + ", type=" + type + "}";
+		return "{\"id\":\"" + id + "\", \"type\":\"" + type + "\"}";
 	}
 
 	public FieldModel(String id, String type) {

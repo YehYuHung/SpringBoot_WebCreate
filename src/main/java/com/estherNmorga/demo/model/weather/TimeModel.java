@@ -34,7 +34,8 @@ public class TimeModel {
 
 	@Override
 	public String toString() {
-		return "TimeModel {startTime=" + startTime + ", endTime=" + endTime + ", parameter=" + parameter + "}";
+		return "{\"startTime\":\"" + startTime + "\", \"endTime\":\"" + endTime + "\", \"parameter\":\"" + parameter
+				+ "\"}";
 	}
 
 	public TimeModel(String startTime, String endTime, ParameterModel parameter) {

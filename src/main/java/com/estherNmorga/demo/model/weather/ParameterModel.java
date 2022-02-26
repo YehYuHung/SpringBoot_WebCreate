@@ -25,7 +25,7 @@ public class ParameterModel {
 
 	@Override
 	public String toString() {
-		return "ParameterModel {parameterName=" + parameterName + ", parameterUnit=" + parameterUnit + "}";
+		return "{\"parameterName\":\"" + parameterName + "\", \"parameterUnit\":\"" + parameterUnit + "\"}";
 	}
 
 	public ParameterModel(String parameterName, String parameterUnit) {

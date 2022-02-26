@@ -27,7 +27,7 @@ public class LocationsModel {
 
 	@Override
 	public String toString() {
-		return "LocationsModel {locationName=" + locationName + ", weatherElement=" + weatherElement + "}";
+		return "{\"locationName\":\"" + locationName + "\", \"weatherElement\":\"" + weatherElement + "\"}";
 	}
 
 	public LocationsModel(String locationName, ArrayList<WeatherElementModel> weatherElement) {

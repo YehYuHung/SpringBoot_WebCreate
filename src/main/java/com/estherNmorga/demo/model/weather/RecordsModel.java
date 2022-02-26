@@ -27,7 +27,7 @@ public class RecordsModel {
 
 	@Override
 	public String toString() {
-		return "RecordsModel [datasetDescription=" + datasetDescription + ", location=" + location + "]";
+		return "{\"datasetDescription\":\"" + datasetDescription + "\", \"location\":\"" + location + "\"}";
 	}
 
 	public RecordsModel(String datasetDescription, ArrayList<LocationsModel> location) {

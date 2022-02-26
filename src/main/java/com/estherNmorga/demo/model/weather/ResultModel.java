@@ -27,7 +27,7 @@ public class ResultModel {
 
 	@Override
 	public String toString() {
-		return "ResultModel {resource_id=" + resource_id + ", fields=" + fields + "}";
+		return "{\"resource_id\":\"" + resource_id + "\", \"fields\":\"" + fields + "\"}";
 	}
 
 	public ResultModel(String resource_id, ArrayList<FieldModel> fields) {
