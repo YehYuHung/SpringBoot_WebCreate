@@ -11,8 +11,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.estherNmorga.demo.model.weather.WeatherModel;
+import com.estherNmorga.demo.uploadFile.service.StorageService;
 
 @Configuration
 public class ConsumingAppConfig {

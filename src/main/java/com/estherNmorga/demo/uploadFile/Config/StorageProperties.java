@@ -1,4 +1,4 @@
-package com.estherNmorga.demo.Config;
+package com.estherNmorga.demo.uploadFile.Config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
